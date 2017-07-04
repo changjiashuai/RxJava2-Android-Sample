@@ -1,5 +1,5 @@
 <img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Sample/master/assets/rxjava2.png >
-<img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Sample/master/assets/rxjava2.0.png >
+<img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Sample/master/assets/Rxjava2.0.png >
 
 # Learning RxJava 2 for Android by example
 

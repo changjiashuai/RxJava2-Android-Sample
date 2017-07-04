@@ -62,6 +62,55 @@ RxJava1 -> RxJava2
 * `limit` operator has been removed - Use `take` in RxJava2
 * and much more.
 
+```
+	com.rxjava2.android.samples.ui.operators
+		combining
+			AndTheWhenExampleActivity
+			CombineLatestExampleActivity
+			...
+		conditional
+			AllExampleActivity
+			SkipUntilExampleActivity
+			...
+		connectable
+			ConnectableExampleActivity
+			...
+		converting
+			ConvertingActivity
+			...
+		creating
+			CreateExampleActivity
+			DeferExampleActivity
+			FromExampleActivity
+			JustExampleActivity
+			...
+		errorhanding
+			CatchExampleActivity
+			RetryExampleActivity
+			...
+		filtering
+			FilterExampleActivity
+			DebounceExampleActivity
+			DistinctExampleActivity
+			...
+		mathematicalandaggregate
+			AverageExampleActivity
+			CountExampleActivity
+			MaxExampleActivity
+			ReduceExampleActivity
+			...
+		transforming
+			BufferExampleActivity
+			FlatMapExampleActivity
+			MapExampleActivity
+			GroupByExampleActivity
+			...
+		utility
+			DelayExampleActivity
+			TimeoutExampleActivity
+			...
+```
+
 # Operators :
 * `Map` -> transform the items emitted by an Observable by applying a function to each item
 * `Zip` -> combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function

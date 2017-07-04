@@ -1,4 +1,4 @@
-package com.rxjava2.android.samples.ui.operators.single;
+package com.rxjava2.android.samples.ui.observable.single;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

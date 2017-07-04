@@ -270,7 +270,7 @@
             android:name=".ui.observable.DisposableExampleActivity"
             android:label="@string/disposable" />
         <activity
-            android:name=".ui.operators.single.SingleObserverExampleActivity"
+            android:name=".ui.observable.single.SingleObserverExampleActivity"
             android:label="@string/SingleObserver" />
         <activity
             android:name=".ui.observable.CompletableObserverExampleActivity"

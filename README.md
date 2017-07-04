@@ -62,6 +62,9 @@ RxJava1 -> RxJava2
 * `limit` operator has been removed - Use `take` in RxJava2
 * and much more.
 
+
+# Examples Structure
+
 ```
 	com.rxjava2.android.samples.ui.operators
 		combining

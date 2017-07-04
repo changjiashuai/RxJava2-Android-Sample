@@ -1,4 +1,4 @@
-<img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Samples/master/assets/rxjava2.png >
+<img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Sample/master/assets/rxjava2.png >
 
 # Learning RxJava 2 for Android by example
 
@@ -9,7 +9,6 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/LICENSE)
 
 ## How to use RxJava 2 in Android Application
-## How to migrate from RxJava 1.0 to RxJava 2.0
 
 ### This project is for : 
 * who is migrating to RxJava 2 
@@ -22,12 +21,6 @@ RxJava 2.0 has been completely rewritten from scratch on top of the Reactive-Str
 Because Reactive-Streams has a different architecture, it mandates changes to some well known RxJava types.
 
 
-# Migration From RxJava 1.0 to RxJava 2.0
-
-To allow having RxJava 1 and RxJava 2 side-by-side, RxJava 2 is under the maven coordinates 
-io.reactivex.rxjava2:rxjava:2.x.y and classes are accessible below io.reactivex.
-
-Users switching from 1.x to 2.x have to re-organize their imports, but carefully.
 
 ### Using RxJava 2.0 Library in your application
 
@@ -84,67 +77,34 @@ RxJava1 -> RxJava2
 
 # Highlights of the examples :
 
-* [DisposableExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/DisposableExampleActivity.java) - Using `CompositeDisposable`
-* [FlowableExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/FlowableExampleActivity.java) - Using `Flowable` and `reduce` operator
-* [SingleObserverExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/SingleObserverExampleActivity.java) - Using `SingleObserver`
-* [CompletableObserverActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/CompletableObserverExampleActivity.java) - Using `CompletableObserver`
-* [MapExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/MapExampleActivity.java) - Using `map` Operator
-* [ZipExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/ZipExampleActivity.java) - Using `zip` Operator
-* [BufferExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/BufferExampleActivity.java) - Using `buffer` Operator
-* [TakeExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/TakeExampleActivity.java) - Using `take` Operator
-* [ReduceExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/ReduceExampleActivity.java) - Using `reduce` Operator
-* [FilterExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/FilterExampleActivity.java) - Using `filter` Operator
-* [SkipExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/SkipExampleActivity.java) - Using `skip` Operator
-* [ReplayExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/ReplayExampleActivity.java) - Using `replay` Operator
-* [ConcatExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/ConcatExampleActivity.java) - Using `concat` Operator
-* [MergeExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/MergeExampleActivity.java) - Using `merge` Operator
-* [DeferExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/DeferExampleActivity.java) - Using `defer` Observable
-* [IntervalExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/operators/IntervalExampleActivity.java) - Using `Interval`
-* [RxBusActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/rxbus/RxBusActivity.java) - RxBus, RxJava2Bus, EventBus, RxEventBus
-* [PaginationActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/pagination/PaginationActivity.java) - Pagination for loadMore in RecyclerView
-* [ComposeOperatorExampleActivity](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/app/src/main/java/com/rxjava2/android/samples/ui/compose/ComposeOperatorExampleActivity.java) - Compose operator for reusable
+* [DisposableExampleActivity]() - Using `CompositeDisposable`
+* [FlowableExampleActivity]() - Using `Flowable` and `reduce` operator
+* [SingleObserverExampleActivity]() - Using `SingleObserver`
+* [CompletableObserverActivity]() - Using `CompletableObserver`
+* [MapExampleActivity]() - Using `map` Operator
+* [ZipExampleActivity]() - Using `zip` Operator
+* [BufferExampleActivity]() - Using `buffer` Operator
+* [TakeExampleActivity]() - Using `take` Operator
+* [ReduceExampleActivity]() - Using `reduce` Operator
+* [FilterExampleActivity]() - Using `filter` Operator
+* [SkipExampleActivity]() - Using `skip` Operator
+* [ReplayExampleActivity]() - Using `replay` Operator
+* [ConcatExampleActivity]() - Using `concat` Operator
+* [MergeExampleActivity]() - Using `merge` Operator
+* [DeferExampleActivity]() - Using `defer` Observable
+* [IntervalExampleActivity]() - Using `Interval`
+* [RxBusActivity]() - RxBus, RxJava2Bus, EventBus, RxEventBus
+* [PaginationActivity]() - Pagination for loadMore in RecyclerView
+* [ComposeOperatorExampleActivity]() - Compose operator for reusable
 
 ### TODO 
 
 * Many examples are to be added 
 
-### Find this project useful ? :heart:
-* Support it by clicking the :star: button on the upper right of this page. :v:
-
-### Check out an awesome MVP architecture based project which uses RxJava2, Dagger2.
-* [Android-MVP-Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture)
-
-### Check out an awesome library for fast and simple networking in Android.
-* [Fast Android Networking Library](https://github.com/amitshekhariitbhu/Fast-Android-Networking)
-
-### Another awesome library for debugging databases and shared preferences.
-* [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database)
-
-### [Check out Mindorks awesome open source projects here](https://mindorks.com/open-source-projects)
-
 ### Contact - Let's become friend
-- [Twitter](https://twitter.com/amitiitbhu)
-- [Github](https://github.com/amitshekhariitbhu)
-- [Medium](https://medium.com/@amitshekhar)
-- [Facebook](https://www.facebook.com/amit.shekhar.iitbhu)
+- [Twitter](https://twitter.com/FlyRj1031cjs)
+- [Github](https://github.com/changjiashuai)
 
-### License
-```
-   Copyright (C) 2016 Amit Shekhar
-   Copyright (C) 2011 Android Open Source Project
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-```
 
 ### Contributing to RxJava 2 Android Samples
 Just make pull request. You are in!

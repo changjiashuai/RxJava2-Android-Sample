@@ -154,6 +154,11 @@ RxJava1 -> RxJava2
 
 * Many examples are to be added 
 
+
+### Best Practices
+
+* [Architecture](https://github.com/changjiashuai/Architecture.git)
+
 ### Contact - Let's become friend
 - [Twitter](https://twitter.com/FlyRj1031cjs)
 - [Github](https://github.com/changjiashuai)

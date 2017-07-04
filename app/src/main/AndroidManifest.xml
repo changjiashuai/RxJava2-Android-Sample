@@ -19,8 +19,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.OperatorsActivity"
+            android:name=".ui.operators.OperatorsActivity"
             android:label="@string/operators" />
+        <activity
+            android:name=".ui.operators.creating.CreatingActivity"
+            android:label="@string/creating" />
+        <activity
+            android:name=".ui.operators.transforming.TransformingActivity"
+            android:label="@string/transforming" />
+        <activity
+            android:name=".ui.operators.filtering.FilteringActivity"
+            android:label="@string/filtering" />
+        <activity
+            android:name=".ui.operators.combining.CombiningActivity"
+            android:label="@string/combining" />
+        <activity
+            android:name=".ui.operators.errorhanding.ErrorHandlingActivity"
+            android:label="@string/errorHanding" />
+        <activity
+            android:name=".ui.operators.utility.UtilityActivity"
+            android:label="@string/utility" />
+        <activity
+            android:name=".ui.operators.conditional.ConditionalActivity"
+            android:label="@string/conditionalAndBoolean" />
+        <activity
+            android:name=".ui.operators.mathematicalandaggregate.MathematicalAndAggregateActivity"
+            android:label="@string/mathematicalAndAggregate" />
+        <activity
+            android:name=".ui.operators.converting.ConvertingActivity"
+            android:label="@string/converting" />
         <activity
             android:name=".ui.networking.NetworkingActivity"
             android:label="@string/networking" />
@@ -30,99 +57,256 @@
         <activity
             android:name=".ui.pagination.PaginationActivity"
             android:label="@string/pagination" />
+
+        <!--Creating-->
         <activity
-            android:name=".ui.operators.SimpleExampleActivity"
-            android:label="@string/simple" />
+            android:name=".ui.operators.creating.CreateExampleActivity"
+            android:label="@string/create" />
         <activity
-            android:name=".ui.operators.MapExampleActivity"
-            android:label="@string/map" />
-        <activity
-            android:name=".ui.operators.ZipExampleActivity"
-            android:label="@string/zip" />
-        <activity
-            android:name=".ui.operators.DisposableExampleActivity"
-            android:label="@string/disposable" />
-        <activity
-            android:name=".ui.operators.TakeExampleActivity"
-            android:label="@string/take" />
-        <activity
-            android:name=".ui.operators.TimerExampleActivity"
-            android:label="@string/timer" />
-        <activity
-            android:name=".ui.operators.IntervalExampleActivity"
-            android:label="@string/interval" />
-        <activity
-            android:name=".ui.operators.SingleObserverExampleActivity"
-            android:label="@string/SingleObserver" />
-        <activity
-            android:name=".ui.operators.CompletableObserverExampleActivity"
-            android:label="@string/CompletableObserver" />
-        <activity
-            android:name=".ui.operators.FlowableExampleActivity"
-            android:label="@string/Flowable" />
-        <activity
-            android:name=".ui.operators.ReduceExampleActivity"
-            android:label="@string/reduce" />
-        <activity
-            android:name=".ui.operators.BufferExampleActivity"
-            android:label="@string/buffer" />
-        <activity
-            android:name=".ui.operators.FilterExampleActivity"
-            android:label="@string/filter" />
-        <activity
-            android:name=".ui.operators.SkipExampleActivity"
-            android:label="@string/skip" />
-        <activity
-            android:name=".ui.operators.ScanExampleActivity"
-            android:label="@string/scan" />
-        <activity
-            android:name=".ui.operators.ReplayExampleActivity"
-            android:label="@string/replay" />
-        <activity
-            android:name=".ui.operators.ConcatExampleActivity"
-            android:label="@string/concat" />
-        <activity
-            android:name=".ui.operators.MergeExampleActivity"
-            android:label="@string/merge" />
-        <activity
-            android:name=".ui.operators.DeferExampleActivity"
+            android:name=".ui.operators.creating.DeferExampleActivity"
             android:label="@string/defer" />
         <activity
-            android:name=".ui.operators.DistinctExampleActivity"
+            android:name=".ui.operators.creating.EmptyNeverThrowExampleActivity"
+            android:label="@string/empty_never_throw" />
+        <activity
+            android:name=".ui.operators.creating.FromExampleActivity"
+            android:label="@string/from" />
+        <activity
+            android:name=".ui.operators.creating.IntervalExampleActivity"
+            android:label="@string/interval" />
+        <activity
+            android:name=".ui.operators.creating.JustExampleActivity"
+            android:label="@string/just" />
+        <activity
+            android:name=".ui.operators.creating.RangeExampleActivity"
+            android:label="@string/range" />
+        <activity
+            android:name=".ui.operators.creating.RepeatExampleActivity"
+            android:label="@string/repeat" />
+        <activity
+            android:name=".ui.operators.creating.StartExampleActivity"
+            android:label="@string/start" />
+        <activity
+            android:name=".ui.operators.creating.TimerExampleActivity"
+            android:label="@string/timer" />
+
+        <!--Transforming-->
+        <activity
+            android:name=".ui.operators.transforming.BufferExampleActivity"
+            android:label="@string/buffer" />
+        <activity
+            android:name=".ui.operators.transforming.FlatMapExampleActivity"
+            android:label="@string/flat_map" />
+        <activity
+            android:name=".ui.operators.transforming.GroupByExampleActivity"
+            android:label="@string/group_by" />
+        <activity
+            android:name=".ui.operators.transforming.MapExampleActivity"
+            android:label="@string/map" />
+        <activity
+            android:name=".ui.operators.transforming.ScanExampleActivity"
+            android:label="@string/scan" />
+        <activity
+            android:name=".ui.operators.transforming.WindowExampleActivity"
+            android:label="@string/window" />
+
+        <!--Filtering-->
+        <activity
+            android:name=".ui.operators.filtering.DebounceExampleActivity"
+            android:label="@string/debounce" />
+        <activity
+            android:name=".ui.operators.filtering.DistinctExampleActivity"
             android:label="@string/distinct" />
         <activity
-            android:name=".ui.operators.LastOperatorExampleActivity"
+            android:name=".ui.operators.filtering.ElementAtExampleActivity"
+            android:label="@string/element_at" />
+        <activity
+            android:name=".ui.operators.filtering.FilterExampleActivity"
+            android:label="@string/filter" />
+        <activity
+            android:name=".ui.operators.filtering.FirstExampleActivity"
+            android:label="@string/first" />
+        <activity
+            android:name=".ui.operators.filtering.IgnoreElementsExampleActivity"
+            android:label="@string/ignore_elements" />
+        <activity
+            android:name=".ui.operators.filtering.LastExampleActivity"
             android:label="@string/last" />
         <activity
-            android:name=".ui.operators.ReplaySubjectExampleActivity"
+            android:name=".ui.operators.filtering.SampleExampleActivity"
+            android:label="@string/sample" />
+        <activity
+            android:name=".ui.operators.filtering.SkipExampleActivity"
+            android:label="@string/skip" />
+        <activity
+            android:name=".ui.operators.filtering.SkipLastExampleActivity"
+            android:label="@string/skip_last" />
+        <activity
+            android:name=".ui.operators.filtering.TakeExampleActivity"
+            android:label="@string/take" />
+        <activity
+            android:name=".ui.operators.filtering.TakeLastExampleActivity"
+            android:label="@string/take_last" />
+
+
+        <!--Combining-->
+        <activity
+            android:name=".ui.operators.combining.AndThenWhenExampleActivity"
+            android:label="@string/and_then_when" />
+        <activity
+            android:name=".ui.operators.combining.CombineLatestExampleActivity"
+            android:label="@string/combine_latest" />
+        <activity
+            android:name=".ui.operators.combining.JoinExampleActivity"
+            android:label="@string/join" />
+        <activity
+            android:name=".ui.operators.combining.MergeExampleActivity"
+            android:label="@string/merge" />
+        <activity
+            android:name=".ui.operators.combining.StartWithExampleActivity"
+            android:label="@string/start_with" />
+        <activity
+            android:name=".ui.operators.combining.SwitchExampleActivity"
+            android:label="@string/switch_fun" />
+        <activity
+            android:name=".ui.operators.combining.ZipExampleActivity"
+            android:label="@string/zip" />
+
+
+        <!--Error Handing-->
+        <activity
+            android:name=".ui.operators.errorhanding.CatchExampleActivity"
+            android:label="@string/catch_fun" />
+        <activity
+            android:name=".ui.operators.errorhanding.RetryExampleActivity"
+            android:label="@string/retry" />
+
+
+        <!--Converting-->
+        <activity
+            android:name=".ui.operators.converting.ToExampleActivity"
+            android:label="@string/to" />
+
+
+        <!--Utility-->
+        <activity
+            android:name=".ui.operators.utility.DelayExampleActivity"
+            android:label="@string/delay" />
+        <activity
+            android:name=".ui.operators.utility.DoExampleActivity"
+            android:label="@string/do_fun" />
+        <activity
+            android:name=".ui.operators.utility.MaterializeOrDematerializeExampleActivity"
+            android:label="@string/materialize_dematerialize" />
+        <activity
+            android:name=".ui.operators.utility.TimeIntervalExampleActivity"
+            android:label="@string/time_interval" />
+        <activity
+            android:name=".ui.operators.utility.TimeoutExampleActivity"
+            android:label="@string/timeout" />
+        <activity
+            android:name=".ui.operators.utility.TimestampExampleActivity"
+            android:label="@string/timestamp" />
+        <activity
+            android:name=".ui.operators.utility.UsingExampleActivity"
+            android:label="@string/using" />
+
+
+        <!--Conditional And Boolean-->
+        <activity
+            android:name=".ui.operators.conditional.AllExampleActivity"
+            android:label="@string/all" />
+        <activity
+            android:name=".ui.operators.conditional.AmbExampleActivity"
+            android:label="@string/amb" />
+        <activity
+            android:name=".ui.operators.conditional.ContainsExampleActivity"
+            android:label="@string/contains" />
+        <activity
+            android:name=".ui.operators.conditional.DefaultIfEmptyExampleActivity"
+            android:label="@string/default_if_empty" />
+        <activity
+            android:name=".ui.operators.conditional.SequenceEqualExampleActivity"
+            android:label="@string/sequence_equal" />
+        <activity
+            android:name=".ui.operators.conditional.SkipUntilExampleActivity"
+            android:label="@string/skip_until" />
+        <activity
+            android:name=".ui.operators.conditional.SkipWhileExampleActivity"
+            android:label="@string/skip_while" />
+        <activity
+            android:name=".ui.operators.conditional.TakeUntilExampleActivity"
+            android:label="@string/take_until" />
+        <activity
+            android:name=".ui.operators.conditional.TakeWhileExampleActivity"
+            android:label="@string/take_while" />
+
+
+        <!--Mathematical And Aggregate-->
+        <activity
+            android:name=".ui.operators.mathematicalandaggregate.AverageExampleActivity"
+            android:label="@string/average" />
+        <activity
+            android:name=".ui.operators.mathematicalandaggregate.ConcatExampleActivity"
+            android:label="@string/concat" />
+        <activity
+            android:name=".ui.operators.mathematicalandaggregate.CountExampleActivity"
+            android:label="@string/count" />
+        <activity
+            android:name=".ui.operators.mathematicalandaggregate.ReduceExampleActivity"
+            android:label="@string/reduce" />
+
+
+        <!--Connectable-->
+        <activity
+            android:name=".ui.operators.connectable.ConnectableExampleActivity"
+            android:label="@string/connectable" />
+        <activity
+            android:name=".ui.operators.connectable.ReplayExampleActivity"
+            android:label="@string/replay" />
+
+
+        <activity
+            android:name=".ui.observable.DisposableExampleActivity"
+            android:label="@string/disposable" />
+        <activity
+            android:name=".ui.operators.single.SingleObserverExampleActivity"
+            android:label="@string/SingleObserver" />
+        <activity
+            android:name=".ui.observable.CompletableObserverExampleActivity"
+            android:label="@string/CompletableObserver" />
+        <activity
+            android:name=".ui.observable.backpressure.FlowableExampleActivity"
+            android:label="@string/Flowable" />
+
+
+        <!--Subject-->
+        <activity android:name=".ui.subjects.SubjectsActivity"
+            android:label="@string/subjects"/>
+        <activity
+            android:name=".ui.subjects.ReplaySubjectExampleActivity"
             android:label="@string/replay_subject" />
         <activity
-            android:name=".ui.operators.PublishSubjectExampleActivity"
+            android:name=".ui.subjects.PublishSubjectExampleActivity"
             android:label="@string/publish_subject" />
         <activity
-            android:name=".ui.operators.BehaviorSubjectExampleActivity"
+            android:name=".ui.subjects.BehaviorSubjectExampleActivity"
             android:label="@string/behavior_subject" />
         <activity
-            android:name=".ui.operators.AsyncSubjectExampleActivity"
+            android:name=".ui.subjects.AsyncSubjectExampleActivity"
             android:label="@string/async_subject" />
+
+
+
         <activity
             android:name=".ui.operators.ThrottleLastExampleActivity"
             android:label="@string/throttle_last" />
         <activity
-            android:name=".ui.operators.DebounceExampleActivity"
-            android:label="@string/debounce" />
-        <activity
-            android:name=".ui.operators.WindowExampleActivity"
-            android:label="@string/window" />
-        <activity
             android:name=".ui.operators.ThrottleFirstExampleActivity"
             android:label="@string/throttle_first" />
         <activity
-            android:name=".ui.operators.DelayExampleActivity"
-            android:label="@string/delay" />
-        <activity android:name=".ui.compose.ComposeOperatorExampleActivity"
-            android:label="@string/compose"
-            />
+            android:name=".ui.compose.ComposeOperatorExampleActivity"
+            android:label="@string/compose" />
     </application>
 
 </manifest>

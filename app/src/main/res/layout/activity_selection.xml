@@ -25,6 +25,13 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="startSubjectsActivity"
+            android:text="@string/subjects"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="startNetworkingActivity"
             android:text="@string/networking"
             android:textColor="@android:color/black" />

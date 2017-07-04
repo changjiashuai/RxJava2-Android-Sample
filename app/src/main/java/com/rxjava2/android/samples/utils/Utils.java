@@ -9,8 +9,16 @@ import com.rxjava2.android.samples.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.ObservableTransformer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+
 /**
- * Created by amitshekhar on 27/08/16.
+ * Email: changjiashuai@gmail.com
+ *
+ * Created by CJS on 29/06/17 15:53.
  */
 public class Utils {
 
@@ -117,7 +125,7 @@ public class Utils {
 
 
     public static List<User> filterUserWhoLovesBoth(List<User> cricketFans, List<User> footballFans) {
-        List<User> userWhoLovesBoth = new ArrayList<User>();
+        List<User> userWhoLovesBoth = new ArrayList<>();
         for (User cricketFan : cricketFans) {
             for (User footballFan : footballFans) {
                 if (cricketFan.id == footballFan.id) {
@@ -148,4 +156,13 @@ public class Utils {
         }
     }
 
+    public static <T> ObservableTransformer<T, T> ioToMain() {
+        return new ObservableTransformer<T, T>() {
+            @Override
+            public ObservableSource<T> apply(Observable<T> upstream) {
+                return upstream.subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread());
+            }
+        };
+    }
 }

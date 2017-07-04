@@ -1,4 +1,4 @@
-<img src=https://raw.githubusercontent.com/amitshekhariitbhu/RxJava2-Android-Samples/master/assets/rxjava2.png >
+<img src=https://raw.githubusercontent.com/changjiashuai/RxJava2-Android-Samples/master/assets/rxjava2.png >
 
 # Learning RxJava 2 for Android by example
 

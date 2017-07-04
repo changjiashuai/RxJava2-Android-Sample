@@ -52,7 +52,7 @@
             android:layout_height="48dp"
             android:layout_margin="8dp"
             android:onClick="flatMap"
-            android:text="@string/flatMap" />
+            android:text="@string/flat_map" />
 
         <Button
             android:id="@+id/flatMapWithZip"

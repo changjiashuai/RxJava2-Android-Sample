@@ -3,9 +3,6 @@
 
 # Learning RxJava 2 for Android by example
 
-[![Mindorks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
-[![Mindorks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RxJava2%20Android%20Samples-blue.svg?style=flat)](https://android-arsenal.com/details/3/4314)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples/blob/master/LICENSE)
 
@@ -127,28 +124,6 @@ RxJava1 -> RxJava2
 * `Replay` -> ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items
 * `Merge` -> combine multiple Observables into one by merging their emissions
 
-
-# Highlights of the examples :
-
-* [DisposableExampleActivity]() - Using `CompositeDisposable`
-* [FlowableExampleActivity]() - Using `Flowable` and `reduce` operator
-* [SingleObserverExampleActivity]() - Using `SingleObserver`
-* [CompletableObserverActivity]() - Using `CompletableObserver`
-* [MapExampleActivity]() - Using `map` Operator
-* [ZipExampleActivity]() - Using `zip` Operator
-* [BufferExampleActivity]() - Using `buffer` Operator
-* [TakeExampleActivity]() - Using `take` Operator
-* [ReduceExampleActivity]() - Using `reduce` Operator
-* [FilterExampleActivity]() - Using `filter` Operator
-* [SkipExampleActivity]() - Using `skip` Operator
-* [ReplayExampleActivity]() - Using `replay` Operator
-* [ConcatExampleActivity]() - Using `concat` Operator
-* [MergeExampleActivity]() - Using `merge` Operator
-* [DeferExampleActivity]() - Using `defer` Observable
-* [IntervalExampleActivity]() - Using `Interval`
-* [RxBusActivity]() - RxBus, RxJava2Bus, EventBus, RxEventBus
-* [PaginationActivity]() - Pagination for loadMore in RecyclerView
-* [ComposeOperatorExampleActivity]() - Compose operator for reusable
 
 ### TODO 
 
